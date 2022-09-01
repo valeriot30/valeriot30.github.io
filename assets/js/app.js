@@ -8,7 +8,7 @@ feather.replace({
     class: "icon"
 });
 const isDarkMode = () => document.documentElement.classList.contains("uk-dark"),
-    setDarkMode = (e = !1) => {
+    setDarkMode = (e = !0) => {
         isDarkMode() !== e && (e ? document.documentElement.classList.add("uk-dark") : document.documentElement.classList.remove("uk-dark"), window.dispatchEvent(new CustomEvent("darkmodechange")))
     }; {
     const e = $(window),
@@ -178,12 +178,6 @@ stickyItemsDarkMode(".uni-header, .uni-sticky-menu, .uni-header-social", (e => e
     }
 }
 setDarkMode(0); {
-    const e = document.querySelector("[data-darkmode-toggle] input");
-    e && (e.addEventListener("change", (() => {
-        setDarkMode(0);
-        const e = isDarkMode();
-        localStorage.setItem("darkMode", "0")
-    })), e.checked = isDarkMode())
 }
 $("[data-uk-modal] [data-uk-scrollspy-nav] a").on("click", (function() {
     UIkit.toggle($(this).closest("[data-uk-modal].uk-open")).toggle()

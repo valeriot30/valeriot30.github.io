@@ -177,7 +177,7 @@ stickyItemsDarkMode(".uni-header, .uni-sticky-menu, .uni-header-social", (e => e
         o.on("scroll resize load darkmodechange", s), s()
     }
 }
-localStorage.getItem("darkMode") ? setDarkMode("1" === localStorage.getItem("darkMode")) : window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches && setDarkMode(!0); {
+setDarkMode(0); {
     const e = document.querySelector("[data-darkmode-toggle] input");
     e && (e.addEventListener("change", (() => {
         setDarkMode(!isDarkMode());

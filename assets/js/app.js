@@ -177,7 +177,13 @@ stickyItemsDarkMode(".uni-header, .uni-sticky-menu, .uni-header-social", (e => e
         o.on("scroll resize load darkmodechange", s), s()
     }
 }
-setDarkMode(0); {
+localStorage.getItem("darkMode") ? setDarkMode("0" === localStorage.getItem("darkMode")) : window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches && setDarkMode(!0); {
+    const e = document.querySelector("[data-darkmode-toggle] input");
+    e && (e.addEventListener("change", (() => {
+        setDarkMode(!isDarkMode());
+        const e = isDarkMode();
+        localStorage.setItem("darkMode", e ? "1" : "0")
+    })), e.checked = isDarkMode())
 }
 $("[data-uk-modal] [data-uk-scrollspy-nav] a").on("click", (function() {
     UIkit.toggle($(this).closest("[data-uk-modal].uk-open")).toggle()

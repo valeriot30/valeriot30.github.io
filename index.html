@@ -1,13 +1,11 @@
+
 <!DOCTYPE html>
-<html lang="en" class="freelancer uk-background-gray-10">
-    
-<!-- Mirrored from unistudio.co/html/dannel/pages/freelancer-onepage.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Aug 2022 12:22:26 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
+<html lang="en" class="freelancer uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40">
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dannel</title>
-        <link rel="icon" type="image/png" href="../favicon.ico"/>
+        <link rel="icon" type="image/png" href="/html/dannel/favicon.ico"/>
         <meta name="description" content="page description here">
 
         <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
@@ -22,8 +20,26 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css">
         <link rel="stylesheet" href="../assets/css/theme/main.css">
+    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5JJP7FY91"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-B5JJP7FY91');
+        </script>
     </head>
     <body>
+
+        <!-- Dark/Light toggle -->
+        <div class="darkmode-trigger bottom-right" data-darkmode-toggle="">
+            <label class="switch">
+                <span class="sr-only">Toggle Darkmode</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
         <!-- Menu modal -->
         <div id="uni-menu-modal" class="uk-modal-full" data-uk-modal="">
             <div class="uk-modal-dialog">
@@ -611,7 +627,7 @@
                                     <div class="uk-width-5-12@m">
                                         <p class="uk-margin-remove">Newsletter</p>
                                         <div class="uk-margin-top uk-margin-medium-top@m">
-                                            <form class="uk-form-stack" action="https://unistudio.co/html/dannel/pages/freelancer-onepage.html" method="POST">
+                                            <form class="uk-form-stack" action="freelancer-onepage.html" method="POST">
                                                 <div class="uk-flex-column uk-flex-row@m">
                                                     <div>
                                                         <input type="email" name="email" required class="uk-input uk-form-medium uk-form-large@m uk-width-small@m uk-background-black-5 dark:uk-text-white dark:uk-background-white-10" placeholder="Your email address..">
@@ -668,6 +684,4 @@
         <script defer src="../assets/js/anime-helper.js"></script>
         <script defer src="../assets/js/anime-helper-defined-timelines.js"></script>
     </body>
-
-<!-- Mirrored from unistudio.co/html/dannel/pages/freelancer-onepage.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Aug 2022 12:22:41 GMT -->
 </html>

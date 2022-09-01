@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="freelancer uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40">
+    
+<!-- Mirrored from unistudio.co/html/dannel/pages/freelancer-single-service.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Aug 2022 12:24:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brand Strategy - Dannel</title>
+        <link rel="icon" type="image/png" href="../favicon.ico"/>
+        <meta name="description" content="page description here">
+
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="../assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" as="style">
+        <link rel="preload" href="../assets/css/theme/main.css" as="style">
+
+        <script src="../assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css">
+        <link rel="stylesheet" href="../assets/css/theme/main.css">
+    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5JJP7FY91"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-B5JJP7FY91');
+        </script>
+    </head>
+    <body>
+
+        <!-- Dark/Light toggle -->
+        <div class="darkmode-trigger bottom-right" data-darkmode-toggle="">
+            <label class="switch">
+                <span class="sr-only">Toggle Darkmode</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Menu modal -->
+        <div id="uni-menu-modal" class="uk-modal-full" data-uk-modal="">
+            <div class="uk-modal-dialog">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport="">
+                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center" data-uk-scrollspy-nav="closest: li; offset: 40; scroll: true;">
+                            <li><a href="#about">About.</a></li>
+                            <li><a href="#works">Works.</a></li>
+                            <li><a href="#clients">Clients.</a></li>
+                            <li><a href="#insights">Insights.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start a project form -->
+        <div id="start-project" class="uk-modal-full" data-uk-modal="">
+            <div class="uk-modal-dialog dark:uk-background-gray-100">
+                <button class="uk-modal-close-full uk-close-large uk-flex-middle dark:uk-text-gray-10" type="button">
+                    <span class="uk-text-bold">Close</span>
+                    <i class="material-icons uk-icon-medium">close</i>
+                </button>
+                <div class="uk-section uk-section-2xlarge@m">
+                    <div class="uk-margin-auto uk-width-xlarge@m">
+                        <header class="uk-panel uk-text-center">
+                            <h2 class="uk-h3 uk-h1@m">Start a project</h2>
+                        </header>
+                        <form class="uk-form-stacked uk-margin-large-top@m">
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-fullname">Full Name</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-large" id="form-fullname" type="text" placeholder="Your name" required>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-email">Email Address</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-large" id="form-email" type="email" placeholder="Your email" required>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-stacked-select">Looking for:</label>
+                                <div class="uk-panel uk-panel-scrollable uk-text-small uk-height-xsmall dark:uk-border-gray-90">
+                                    <ul class="uk-list">
+                                        <li><label><input class="uk-checkbox" type="checkbox"> Branding</label></li>
+                                        <li><label><input class="uk-checkbox" type="checkbox"> Web Design</label></li>
+                                        <li><label><input class="uk-checkbox" type="checkbox"> Web Development</label></li>
+                                        <li><label><input class="uk-checkbox" type="checkbox"> E-Commerce</label></li>
+                                        <li><label><input class="uk-checkbox" type="checkbox"> SEO</label></li>
+                                        <li><label><input class="uk-checkbox" type="checkbox"> Maintenace</label></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin" hidden>
+                                <label class="uk-form-label uk-text-overline" for="form-stacked-select">Looking for:</label>
+                                <div class="uk-form-controls">
+                                    <select class="uk-select" id="form-stacked-select">
+                                        <option>Branding</option>
+                                        <option>Web Design</option>
+                                        <option>Web Development</option>
+                                        <option>E-Commerce</option>
+                                        <option>SEO</option>
+                                        <option>Maintenace</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-budget">Your Budget:</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-large" id="form-budget" type="text" placeholder="ex: +$1000" required>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-brief">Brief:</label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea" id="form-breif" placeholder="Please go into as much detail as possible." rows="5" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin-medium">
+                                <button class="uk-button uk-button-large uk-button-primary uk-width-expand dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80">Send Brief</button>
+                            </div>
+
+                        </form>
+                        <p class="uk-text-meta uk-text-center">If you would rather contact me, you can call me on +1 340 369 795.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+
+            <!-- Header: Location -->
+            <div class="uni-header-location uk-text-xsmall dark:uk-text-white uk-visible@l">
+                <p class="uk-margin-remove">120 h. 80th Street, Leads, UK</p>
+            </div>
+
+            <!-- Header: Section indicator -->
+            <div class="uni-header-section-indicator uk-text-xsmall dark:uk-text-white uk-visible@l">
+                <ul class="uk-list">
+                    <li data-selector=".uni-article">Brand Strategy</li>
+                    <li data-selector=".uni-cta-footer">Get in touch</li>
+                </ul>
+            </div>
+
+            <!-- Header: Social -->
+            <div class="uni-header-social dark:uk-text-white uk-visible@l">
+                <ul class="uk-flex-column uk-subnav uk-subnav-medium">
+                    <li>
+                        <a href="https://instagram.com/unistudioco">
+                            <i class="brand-instagram uk-icon-small"><span class="sr-only">Instagram Icon</span></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/unistudioco">
+                            <i class="brand-dribbble uk-icon-small"><span class="sr-only">Dribbble Icon</span></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Header -->
+            <header class="uni-header uk-position-top">
+                <div class="uni-header-navbar uk-scrollnav-header" data-uk-sticky="top: 120; animation: uk-animation-slide-top">
+                    <div class="uk-container uk-container-large">
+                        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar="">
+                            <div class="uk-navbar-top">
+                                <div class="uk-navbar-left uk-flex-1">
+                                    <a class="uk-logo uk-navbar-item uk-h4 uk-h3@s uk-margin-remove dark:uk-text-gray-10" href="freelancer-onepage.html">Dannel.</a>
+                                    <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10" href="freelancer-onepage.html">D.</a>
+                                </div>
+
+                                <div class="uk-navbar-right uk-flex-1 uk-flex-right">
+                                    <div class="uk-navbar-item uk-visible@m">
+                                        <a href="#start-project" class="uk-link-expand uk-link-underline dark:uk-text-white" data-uk-toggle="">
+                                            <span class="uk-text-bold">Let’s talk</span>
+                                            <i class="material-icons-round">arrow_forward</i>
+                                        </a>
+                                    </div>
+                                    <div class="uk-navbar-item uk-hidden@m">
+                                        <a class="uni-menu-trigger" href="#uni-menu-modal" data-uk-toggle=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Single service -->
+            <article class="uni-article uni-single-service uk-section-large uk-section-2xlarge@m uk-padding-2xlarge-top uk-padding-3xlarge-top@m">
+
+                <div class="uk-container">
+
+                    <div class="uk-panel uk-overflow-hidden">
+                        <canvas data-uk-height-viewport="offset-bottom: 50;"></canvas>
+                        <img src="../assets/images/posts/post-04.jpg" alt="image" data-uk-cover="">
+                        <div class="uk-panel uk-position-cover uk-flex-middle uk-flex-center uk-text-center uk-ovrelay uk-overlay-primary">
+                            <h1 class="uk-h2 uk-h1@m uk-text-white">Brand Strategy</h1>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin-large-top uk-margin-xlarge-top@m">
+                        <div class="uk-container uk-container-xsmall">
+                            <p class="uk-text-large uk-text-2xlarge@m">When it comes to your brand’s identity, we don’t believe in skimming the surface.</p>
+                            <p class="uk-text-large@m">Instead we dive deep to find the ideas, values, and people that make your business different, then transform those facts into an enthralling story. Using compelling content, engaged communities, fresh graphics, and a clear and captivating message, we turn the tide in your favor.</p>
+                            <h3 class="uk-h4 uk-h2@m uk-margin-xlarge-top@m">01. What is Brand Strategy?</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+                            <h3 class="uk-h4 uk-h2@m uk-margin-xlarge-top@m">02. What you get with us?</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+                            <h3 class="uk-h4 uk-h2@m uk-margin-xlarge-top@m">03. Brand Architecture</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+                            <h3 class="uk-h4 uk-h2@m uk-margin-xlarge-top@m">04. Brand Vision & Strategic Planning</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+                            <h3 class="uk-h4 uk-h2@m uk-margin-xlarge-top@m">05. Brand Positioning</h3>
+                            <p class="uk-text-large@m">lorem ipsum ultricies at duis volutpat vestibulum sed ut. Nec pharetra leo magnis egestas elit eget vitae duis. tempus egestas erat ultricies id fames nisl viverra bibendum. parturient eu mi elit facilisis lobortis fusce non.</p>
+
+                            <div class="uk-panel uk-margin-xlarge-top uk-margin-2xlarge-top@m">
+                                <a href="#start-project" class="uk-button uk-button-large uk-button-primary" data-uk-toggle="">
+                                    <span class="uk-text-bold">Let's get started</span>
+                                    <i class="material-icons-round">arrow_forward</i>
+                                </a>
+                                <ul class="uk-subnav uk-margin-large-top uk-margin-xlarge-top@m">
+                                    <li>Share:</li>
+                                    <li><a href="https://facebook.com/sharer/sharer.php?u=https://unistudio.co/html/dannel/pages/freelancer-single-service.html"><i class="brand-facebook uk-icon-small"><span class="sr-only">Facebook Icon</span></i></a></li>
+                                    <li><a href="https://twitter.com/share?url=https://unistudio.co/html/dannel/pages/freelancer-single-service.html&amp;text=Brand%20Strategy"><i class="brand-twitter uk-icon-small"><span class="sr-only">Twitter Icon</span></i></a></li>
+                                    <li><a href="https://pinterest.com/pin/create/bookmarklet/?&amp;url=https://unistudio.co/html/dannel/pages/freelancer-single-service.html&amp;description=Brand%20Strategy"><i class="brand-pinterest uk-icon-small"><span class="sr-only">Pinterest Icon</span></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Footer / cta -->
+            <footer class="uni-cta-footer uk-section-large uk-section-2xlarge@m uk-padding-large-bottom uk-overflow-hidden uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40 uk-dark">
+                <div class="uk-container">
+                    <div>
+                        <div class="uk-width-2xlarge">
+                            <h2 class="uk-h1 uk-heading-hero@m">Turn your brand into a great one.</h2>
+                            <a href="#start-project" class="uk-button uk-button-large uk-button-primary uk-margin-top uk-margin-large-top@m dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80" data-uk-toggle="">
+                                <span>Start a project</span>
+                                <span class="material-icons-round">arrow_forward</span>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="uk-section-large uk-section-2xlarge@m dark:uk-text-gray-10">
+                                <div class="uk-grid uk-grid-medium" data-uk-grid="">
+                                    <div class="uk-width-expand@m">
+                                        <div class="uk-grid uk-grid-medium uk-child-width-1-2@m" data-uk-grid="">
+                                            <div>
+                                                <ul class="uk-list uk-list-large">
+                                                    <li><a href="https://facebook.com/unistudioco" class="uk-link">Facebook</a></li>
+                                                    <li><a href="https://dribbble.com/unistudioco" class="uk-link">Dribbble</a></li>
+                                                    <li><a href="https://behance.net/unistudioco" class="uk-link">Behance</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-list uk-list-large">
+                                                    <li><a href="https://instagram.com/unistudioco" class="uk-link">Instagram</a></li>
+                                                    <li><a href="https://twitter.com/unistudioco" class="uk-link">Twitter</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-5-12@m">
+                                        <p class="uk-margin-remove">Newsletter</p>
+                                        <div class="uk-margin-top uk-margin-medium-top@m">
+                                            <form class="uk-form-stack" action="https://unistudio.co/html/dannel/pages/freelancer-onepage.html" method="POST">
+                                                <div class="uk-flex-column uk-flex-row@m">
+                                                    <div>
+                                                        <input type="email" name="email" required class="uk-input uk-form-medium uk-form-large@m uk-width-small@m uk-background-black-5 dark:uk-text-white dark:uk-background-white-10" placeholder="Your email address..">
+                                                    </div>
+                                                    <div class="uk-margin-small-top uk-margin-remove-top@m">
+                                                        <button type="submit" class="uk-button uk-button-medium uk-button-large@m uk-button-primary uk-width-expand uk-width-auto@m dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80">
+                                                            <span>Sign up</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="uk-margin-remove dark:uk-border-white-10">
+
+                            <div class="uk-margin-large-top">
+                                <div class="uk-grid uk-grid-medium@m" data-uk-grid>
+                                    <div class="uk-width-5-12@m">
+                                        <div class="uk-grid uk-child-width-1-2 uk-child-width-auto@m">
+                                            <div>
+                                                <a href="freelancer-terms.html" class="uk-link-underline">Terms of service</a>
+                                            </div>
+                                            <div>
+                                                <a href="freelancer-privacy.html" class="uk-link-underline">Privacy Policy</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-expand@m uk-flex-first@m">
+                                        <span>2021 © dannel.me</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- Initiat Scripts -->
+        <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
+        <script defer src="../assets/js/responsive-uk-attr.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+        <script defer src="../assets/js/app.js"></script>
+        <script defer src="../assets/js/swiper-helper.js"></script>
+        <script defer src="../assets/js/typed-helper.js"></script>
+        <script defer src="../assets/js/anime-helper.js"></script>
+        <script defer src="../assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
+
+<!-- Mirrored from unistudio.co/html/dannel/pages/freelancer-single-service.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Aug 2022 12:24:02 GMT -->
+</html>

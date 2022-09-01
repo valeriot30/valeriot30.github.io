@@ -8,7 +8,7 @@ feather.replace({
     class: "icon"
 });
 const isDarkMode = () => document.documentElement.classList.contains("uk-dark"),
-    setDarkMode = (e = !0) => {
+    setDarkMode = (e = !1) => {
         isDarkMode() !== e && (e ? document.documentElement.classList.add("uk-dark") : document.documentElement.classList.remove("uk-dark"), window.dispatchEvent(new CustomEvent("darkmodechange")))
     }; {
     const e = $(window),

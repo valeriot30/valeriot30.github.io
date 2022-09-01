@@ -180,7 +180,7 @@ stickyItemsDarkMode(".uni-header, .uni-sticky-menu, .uni-header-social", (e => e
 setDarkMode(0); {
     const e = document.querySelector("[data-darkmode-toggle] input");
     e && (e.addEventListener("change", (() => {
-        setDarkMode(!isDarkMode());
+        setDarkMode(0);
         const e = isDarkMode();
         localStorage.setItem("darkMode", "0")
     })), e.checked = isDarkMode())

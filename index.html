@@ -43,7 +43,7 @@
             </div>
         </div>
 
-        <div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-floating cc-type-opt-in cc-theme-edgeless cc-bottom cc-left cc-color-override--1518487596 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">Questo sito utilizza cookie tecnici, analitici e di profilazione, necessari rispettivamente a consentire alcune funzionalità. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.ekkoservice.com/policy" rel="noopener noreferrer nofollow" target="_blank">Cookie Policy</a></span><div class="cc-compliance cc-highlight"><a aria-label="deny cookies" role="button" tabindex="0" class="cc-btn cc-deny">Rifiuta</a><a aria-label="allow cookies" role="button" tabindex="0" class="cc-btn cc-allow">Accetta tutti</a></div><!--googleon: all--></div>
+       
 
         <!-- Start a project form -->
         <div id="start-project" class="uk-modal-full" data-uk-modal="">
@@ -484,6 +484,45 @@
         </div>
 
         <!-- Initiat Scripts -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+    window.addEventListener('load', function(){
+    window.cookieconsent.initialise({
+    revokeBtn: "<div class='cc-revoke'></div>",
+    type: "opt-in",
+    position: "bottom-left",
+    theme: "edgeless",
+    palette: {
+        popup: {
+            background: "#000",
+            text: "#fff"
+            },
+        button: {
+            background: "#fd0",
+            text: "#000"
+            }
+        },
+    content: {
+        message: "Questo sito utilizza cookie tecnici, analitici e di profilazione, necessari rispettivamente a consentire alcune funzionalità.",
+        link: "Cookie Policy",
+        allow: "Accetta tutti",
+        deny: "Rifiuta",
+        href: "https://www.valeriotriolo.it/policy"
+        },
+        onInitialise: function(status) {
+        if(status == cookieconsent.status.allow) myScripts();
+        },
+        onStatusChange: function(status) {
+        if (this.hasConsented()) myScripts();
+        }
+    })
+    });
+
+    function myScripts() {
+    // Paste here your scripts that use cookies requiring consent.
+    }
+</script>
         <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
         <script defer src="./assets/js/responsive-uk-attr.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>

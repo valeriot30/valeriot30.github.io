@@ -1,541 +1,251 @@
 
 <!DOCTYPE html>
-<html lang="en" class="freelancer uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Valerio Triolo - Full Stack Developer</title>
-        <link rel="icon" type="image/png" href="./favicon.ico"/>
-        <meta name="description" content="Valerio Triolo, Full Stack Developer: Web Design, Web Development, Software Development, App Development, Problem Solving">
-        <meta property="og:title" content="Valerio Triolo - Full Stack Developer" />
-        <meta property="og:description" content="Valerio Triolo, Full Stack Developer: Web Design, Web Development, Software Development, App Development, Problem Solving" />
-        <meta property="og:image" content="./assets/images/logovt.png"" />
+<html>
 
-        <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
-        <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
-        <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
-        <link rel="preload" href="./assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css" as="style">
-        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" as="style">
-        <link rel="preload" href="./assets/css/theme/main.css" as="style">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script src="./assets/js/app-head.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css">
-        <link rel="stylesheet" href="./assets/css/theme/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css">
-    
-    </head>
-    <body>
+  <title>Valerio Triolo</title>
+  <meta name="description" content="">
 
-        <!-- Menu modal -->
-        <div id="uni-menu-modal" class="uk-modal-full" data-uk-modal="">
-            <div class="uk-modal-dialog">
-                <div class="uk-container">
-                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport="">
-                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center" data-uk-scrollspy-nav="closest: li; offset: 40; scroll: true;">
-                            <li><a href="#about">About.</a></li>
-                            <li><a href="#works">Lavori.</a></li>
-                            <li><a href="#clients">Clienti.</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <meta name="og:image" href="http://nlp.seas.harvard.edu/SEAS.png" />
+  <link rel="stylesheet" href="./css/main.css">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- Latest compiled and minified CSS -->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  processEscapes: true
+  }
+  });
+  </script>
 
-       
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-        <!-- Start a project form -->
-        <div id="start-project" class="uk-modal-full" data-uk-modal="">
-            <div class="uk-modal-dialog dark:uk-background-gray-100">
-                <button class="uk-modal-close-full uk-close-large uk-flex-middle dark:uk-text-gray-10" type="button">
-                    <span class="uk-text-bold">Chiudi</span>
-                    <i class="material-icons uk-icon-medium">close</i>
-                </button>
-                <div class="uk-section uk-section-2xlarge@m">
-                    <div class="uk-margin-auto uk-width-xlarge@m">
-                        <header class="uk-panel uk-text-center">
-                            <h2 class="uk-h3 uk-h1@m">Inizia un progetto</h2>
-                        </header>
-                        <form class="uk-form-stacked uk-margin-large-top@m">
+<script src="/bib-list.js"></script>
 
-                            <div class="uk-margin">
-                                <label class="uk-form-label uk-text-overline" for="form-fullname">Nome</label>
-                                <div class="uk-form-controls">
-                                    <input class="uk-input uk-form-large" id="form-fullname" type="text" placeholder="Il tuo nome" required>
-                                </div>
-                            </div>
+<link rel="stylesheet" href="/bib-publication-list.css" type="text/css" />
 
-                            <div class="uk-margin">
-                                <label class="uk-form-label uk-text-overline" for="form-email">Email</label>
-                                <div class="uk-form-controls">
-                                    <input class="uk-input uk-form-large" id="form-email" type="email" placeholder="E-mail" required>
-                                </div>
-                            </div>
 
-                            <div class="uk-margin">
-                                <label class="uk-form-label uk-text-overline" for="form-stacked-select">Cerco:</label>
-                                <div class="uk-panel uk-panel-scrollable uk-text-small uk-height-xsmall dark:uk-border-gray-90">
-                                    <ul class="uk-list">
-                                        <li><label><input class="uk-checkbox" type="checkbox"> Consulenza</label></li>
-                                        <li><label><input class="uk-checkbox" type="checkbox"> Web Design</label></li>
-                                        <li><label><input class="uk-checkbox" type="checkbox"> Web Development</label></li>
-                                        <li><label><input class="uk-checkbox" type="checkbox"> E-Commerce</label></li>
-                                        <li><label><input class="uk-checkbox" type="checkbox"> SEO</label></li>
-                                        <li><label><input class="uk-checkbox" type="checkbox"> Manutenzione</label></li>
-                                        <li><label><input class="uk-checkbox" type="checkbox"> Altro</label></li>
-                                    </ul>
-                                </div>
-                            </div>
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
 
-                            <div class="uk-margin" hidden>
-                                <label class="uk-form-label uk-text-overline" for="form-stacked-select">Cerco:</label>
-                                <div class="uk-form-controls">
-                                    <select class="uk-select" id="form-stacked-select">
-                                        <option>Consulenza</option>
-                                        <option>Web Design</option>
-                                        <option>Web Development</option>
-                                        <option>E-Commerce</option>
-                                        <option>SEO</option>
-                                        <option>Manutenzione</option>
-                                        <option>Altro</option>
-                                    </select>
-                                </div>
-                            </div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
 
-                            <div class="uk-margin">
-                                <label class="uk-form-label uk-text-overline" for="form-budget">Il tuo budget:</label>
-                                <div class="uk-form-controls">
-                                    <input class="uk-input uk-form-large" id="form-budget" type="text" placeholder="ex: +€1000" required>
-                                </div>
-                            </div>
 
-                            <div class="uk-margin">
-                                <label class="uk-form-label uk-text-overline" for="form-brief">Breve descrizione:</label>
-                                <div class="uk-form-controls">
-                                    <textarea class="uk-textarea" id="form-breif" placeholder="Dammi più dettagli possibili." rows="5" required></textarea>
-                                </div>
-                            </div>
+  <body>
 
-                            <div class="uk-margin-medium">
-                                <button class="uk-button uk-button-large uk-button-primary uk-width-expand dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80">Invia</button>
-                            </div>
+    <header class="site-header">
 
-                        </form>
-                        <p class="uk-text-meta uk-text-center">Se preferisci contattarmi direttamente, puoi chiamare o scrivere al <a href="tel:+393348240516">+39 3348240516</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="wrapper">
 
-        <div class="wrap">
+    <span><img width="50px" style="padding:5px" src="./logo.png"></span>
 
-            <!-- Header: Social -->
-            <div class="uni-header-social dark:uk-text-white uk-visible@l">
-                <ul class="uk-flex-column uk-subnav uk-subnav-medium">
-                    <li>
-                        <a href="https://instagram.com/valerio3010">
-                            <i class="brand-instagram uk-icon-small"><span class="sr-only">Instagram Icon</span></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://dribbble.com/unistudioco">
-                            <i class="brand-github uk-icon-small"><span class="sr-only">Dribbble Icon</span></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <span>
+        <!-- <a class="site-title" href="/">rush-nlp</a> -->
 
-            <!-- Hero -->
-            <div id="overview" class="uni-hero uk-panel uk-overflow-hidden">
+    </span>
 
-                <div class="uk-container uk-position-cover uk-visible@m" data-uk-height-viewport="">
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
 
-                    <!-- Background image -->
+      <div class="trigger">
         
-                </div>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a class="page-link" href="/">Main</a>
+        
+          
+          
+        <!-- <a class="page-link" href="http://blog.rush-nlp.com">Blog</a> -->
+      </div>
+    </nav>
 
-                <!-- Header -->
-                <header class="uni-header uk-position-top">
-                    <div class="uni-header-navbar uk-scrollnav-header" data-uk-sticky="top: 120; animation: uk-animation-slide-top">
-                        <div class="uk-container uk-container-large">
-                            <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar="">
-                                <div class="uk-navbar-top">
-                                    <div class="uk-navbar-left uk-flex-1">
-                                        <a class="uk-logo uk-navbar-item uk-h1 uk-h3@s uk-margin-remove dark:uk-text-gray-10" href="#" style="justify-content: start;"><img src="https://i.imgur.com/EJev2VU.png" style="width: 10%;"/></a>
-                                        <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10" href="#"><img src="https://i.imgur.com/EJev2VU.png" style="width: 10%;"/></a>
-                                    </div>
-                                    <div class="uk-navbar-center">
-                                        <ul class="uk-navbar-nav uk-visible@m dark:uk-text-gray-10" data-uk-scrollspy-nav="closest: li; offset: 80; scroll: true;">
-                                            <li><a href="#overview">About</a></li>
-                                            <li><a href="#works">Lavori</a></li>
-                                            <li><a href="#skills">Skills</a></li>
-                                            <li><a href="#insights">Github</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="uk-navbar-right uk-flex-1 uk-flex-right">
-                                        <div class="uk-navbar-item uk-visible@m">
-                                            <a href="#start-project" class="uk-link-expand uk-link-underline dark:uk-text-white" data-uk-toggle="">
-                                                <span class="uk-text-bold">Parliamo</span>
-                                                <i class="material-icons-round">arrow_forward</i>
-                                            </a>
-                                        </div>
-                                        <div class="uk-navbar-item uk-hidden@m">
-                                            <a class="uni-menu-trigger" href="#uni-menu-modal" data-uk-toggle=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </header>
+  </div>
 
-                <!-- Hero: Content -->
-                <div class="uk-panel uk-overflow-hidden uk-position-z-index">
-                    <div class="uk-container">
-                        <div class="uk-panel uk-section-2xlarge uk-flex-middle@s" data-uk-height-viewport="media: @s;">
-                            <div class="uk-width-xlarge@m">
-                                <h5 class="uk-h5 dark:uk-text-gray-10">Valerio Triolo</h5>
-                                <h2 class="uk-heading-large uk-margin-medium-top uk-margin-remove-bottom dark:uk-text-gray-10">Full-Stack <br> Developer.</h2>
-                                <a href="#start-project" class="uk-button uk-button-large uk-button-primary uk-margin-medium-top uk-margin-large-top@m dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80" data-uk-toggle="">
-                                    <span>Inizia un progetto</span>
-                                    <span class="material-icons-round">arrow_forward</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+</header>
 
-            </div>
 
-            <!-- Services -->
-            <div id="services" class="uni-services">
-                <div class="uk-container">
-                    <div class="uk-grid uk-grid-medium uk-child-width-1-3@m uk-position-relative uk-position-z-index" data-uk-grid>
-                        <div>
-                            <div class="uni-services-card uk-card uk-card-default uk-card-small uk-card-medium@m uk-padding-medium-horizontal@m dark:uk-background-gray-90 uk-active">
-                                <div class="uni-services-card-icon">
-                                    <span class="material-icons uk-icon-large uk-text-primary dark:uk-text-white dark:uk-border-gray-80">code</span>
-                                </div>
-                                <div class="uk-panel uk-margin-large-top">
-                                    <h2 class="uni-services-card-title uk-h4 uk-margin-remove">Web Development</h2>
-                                    <p class="uni-services-card-desc uk-margin-small-top uk-text-small uk-text-muted dark:uk-text-gray-40">Realizza il tuo sito web o la tua web app.</p>
-                                </div>
-                                <button class="uni-services-card-btn uk-button uk-button-large uk-button-icon uk-margin-medium-top uk-background-gray-10 hover:uk-background-gray-30">
-                                    <span class="material-icons dark:uk-text-gray-10">arrow_forward</span>
-                                </button>
-                                <a href="freelancer-single-service.html" class="uk-position-cover"><span class="sr-only">Card Link</span></a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uni-services-card uk-card uk-card-default uk-card-small uk-card-medium@m uk-padding-medium-horizontal@m  dark:uk-background-gray-90">
-                                <div class="uni-services-card-icon">
-                                    <span class="material-icons uk-icon-large uk-text-primary dark:uk-text-white dark:uk-border-gray-80">fingerprint</span>
-                                </div>
-                                <div class="uk-panel uk-margin-large-top">
-                                    <h2 class="uni-services-card-title uk-h4 uk-margin-remove">SEO Strategy</h2>
-                                    <p class="uni-services-card-desc uk-margin-small-top uk-text-small uk-opacity-90 dark:uk-text-white">Migliora il tuo posizionamento nei motori di ricerca.</p>
-                                </div>
-                                <button class="uni-services-card-btn uk-button uk-button-large uk-button-icon uk-margin-medium-top uk-background-gray-10 hover:uk-background-gray-30">
-                                    <span class="material-icons">arrow_forward</span>
-                                </button>
-                                <a href="freelancer-single-service.html" class="uk-position-cover"><span class="sr-only">Card Link</span></a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uni-services-card uk-card uk-card-default uk-card-small uk-card-medium@m uk-padding-medium-horizontal@m dark:uk-background-gray-90">
-                                <div class="uni-services-card-icon">
-                                    <span class="material-icons uk-icon-large uk-text-primary dark:uk-text-white dark:uk-border-gray-80">help</span>
-                                </div>
-                                <div class="uk-panel uk-margin-large-top">
-                                    <h2 class="uni-services-card-title uk-h4 uk-margin-remove">Consulenza</h2>
-                                    <p class="uni-services-card-desc uk-margin-small-top uk-text-small uk-text-muted dark:uk-text-gray-40">Hai un problema da risolvere o un idea in mente?</p>
-                                </div>
-                                <button class="uni-services-card-btn uk-button uk-button-large uk-button-icon uk-margin-medium-top uk-background-gray-10 hover:uk-background-gray-30">
-                                    <span class="material-icons dark:uk-text-gray-10">arrow_forward</span>
-                                </button>
-                                <a href="freelancer-single-service.html" class="uk-position-cover"><span class="sr-only">Card Link</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post">
 
-            <!-- Works -->
-            <div id="works" class="uni-works uk-section-large uk-section-2xlarge@m">
-                <div class="uk-container">
-                    <h2 class="uk-h2 uk-h1@m">I miei <span class="uk-text-primary dark:uk-text-gray-60">lavori</span></h2>
-                    <div class="uk-grid-large uk-grid-xlarge@m uk-margin-xlarge-top uk-margin-2xlarge-top@m" data-uk-grid>
-                        <div>
-                            <div class="uk-card uk-card-default dark:uk-background-gray-90">
-                                <div class="uk-grid-collapse uk-grid-match" data-uk-grid>
-                                    <div class="uk-width-expand@m">
-                                        <div class="uk-panel uk-overflow-hidden">
-                                            <canvas width="784" height="588"></canvas>
-                                            <img src="./assets/images/projects/project-1.png" alt="image" data-uk-cover>
-                                            <!-- Light -->
-                                            <div class="dark:uk-hidden">
-                                                <div class="uk-position-cover uk-position-z-index uk-visible@m" style="background-image: linear-gradient(to right, white 8.33%, transparent);"></div>
-                                                <div class="uk-position-cover uk-position-z-index uk-hidden@m" style="background-image: linear-gradient(to top, white 8.33%, transparent);"></div>
-                                            </div>
-                                            <!-- dark -->
-                                            <div class="uk-hidden dark:uk-visible">
-                                                <div class="uk-position-cover uk-position-z-index uk-visible@m" style="background-image: linear-gradient(to right, var(--color-gray-90) 6.33%, rgb(26 26 26 / 89%) 26.94%, rgba(255, 255, 255, 0) 100%);"></div>
-                                                <div class="uk-position-cover uk-position-z-index uk-hidden@m" style="background-image: linear-gradient(to top, var(--color-gray-90) 6.33%, rgb(26 26 26 / 89%) 26.94%, rgba(255, 255, 255, 0) 100%);"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-width-5-12@m uk-flex-first@m">
-                                        <div class="uk-panel uk-card-small uk-card-xlarge@m uk-padding-remove-right@m uk-flex-column uk-flex-between">
-                                            <div class="uk-panel">
-                                                <div class="uk-text-small uk-text-gray-70 dark:uk-text-gray-40">
-                                                    <span>App Android / iOS</span>
-                                                </div>
-                                                <h3 class="uk-h3 uk-h1@m uk-margin-large-top@m">Lakea</h3>
-                                                <p class="uk-text-small uk-text-medium@m uk-text-gray-70 dark:uk-text-gray-40">Applicazione per dispositivi mobili pensata per facilitare la gestione domestica per gli studenti fuorisede.</p>
-                                            </div>
-                                            <div class="uk-margin-top">
-                                                <a href="./service1.html" class="uk-button uk-button-large@m uk-button-primary">
-                                                    <span class="material-icons-round">arrow_forward</span>
-                                                    <span>Esplora</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-default dark:uk-background-gray-90">
-                                <div class="uk-grid-collapse uk-grid-match" data-uk-grid>
-                                    <div class="uk-width-expand@m">
-                                        <div class="uk-panel uk-overflow-hidden">
-                                            <canvas width="784" height="588"></canvas>
-                                            <img src="https://www.royalfitness.it/assets/images/home2.jpg" alt="image" data-uk-cover>
-                                            <!-- Light -->
-                                            <div class="dark:uk-hidden">
-                                                <div class="uk-position-cover uk-position-z-index uk-visible@m" style="background-image: linear-gradient(to right, white 8.33%, transparent);"></div>
-                                                <div class="uk-position-cover uk-position-z-index uk-hidden@m" style="background-image: linear-gradient(to top, white 8.33%, transparent);"></div>
-                                            </div>
-                                            <!-- dark -->
-                                            <div class="uk-hidden dark:uk-visible">
-                                                <div class="uk-position-cover uk-position-z-index uk-visible@m" style="background-image: linear-gradient(to right, var(--color-gray-90) 6.33%, rgb(26 26 26 / 89%) 26.94%, rgba(255, 255, 255, 0) 100%);"></div>
-                                                <div class="uk-position-cover uk-position-z-index uk-hidden@m" style="background-image: linear-gradient(to top, var(--color-gray-90) 6.33%, rgb(26 26 26 / 89%) 26.94%, rgba(255, 255, 255, 0) 100%);"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-width-5-12@m uk-flex-first@m">
-                                        <div class="uk-panel uk-card-small uk-card-xlarge@m uk-padding-remove-right@m uk-flex-column uk-flex-between">
-                                            <div class="uk-panel">
-                                                <div class="uk-text-small uk-text-gray-70 dark:uk-text-gray-40">
-                                                    <span>Sito web</span>
-                                                </div>
-                                                <h3 class="uk-h3 uk-h1@m uk-margin-large-top@m">Royal Fitness</h3>
-                                                <p class="uk-text-small uk-text-medium@m uk-text-gray-70 dark:uk-text-gray-40">Sito web dotato di sistema di prenotazione realizzato con una tecnologia proprietaria.</p>
-                                            </div>
-                                            <div class="uk-margin-top">
-                                                <a href="https://royalfitness.it" class="uk-button uk-button-large@m uk-button-primary">
-                                                    <span class="material-icons-round">arrow_forward</span>
-                                                    <span>Esplora</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-flex-center@m uk-margin-large-top uk-margin-2xlarge-top@m">
-                        <a href="" class="uk-link-expand uk-link-underline dark:uk-text-gray-10">
-                            <i class="material-icons-round">arrow_forward</i>
-                            <span>Altri lavori</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Testimonials -->
-            <div id="skills" class="uni-testimonials swiper-parent uk-overflow-hidden uk-section-large uk-section-2xlarge@m uk-background-white dark:uk-background-gray-90 dark:uk-text-gray-10">
-                <div class="uk-container">
-                    <h2 class="uk-h2 uk-h1@m uk-margin-remove">Le mie skills.</h2>
-                    <div class="uk-grid uk-grid-2xlarge uk-grid-match uk-child-width-1-3@m uk-margin-2xlarge-top" data-uk-grid="">
-                        <div class="uk-first-column">
-                            <div class="uk-panel">
-                                <i class="material-icons-round uk-icon-large">cloud</i>
-                                <h4 class="uk-h4 uk-margin-small-top">Problem solving</h4>
-                                <p class="uk-margin-medium-top">Analizzo e studio a 360 gradi i problemi che mi vengono posti, arrivando alla soluzione più efficiente.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-panel">
-                                <i class="material-icons-round uk-icon-large">design_services</i>
-                                <h4 class="uk-h4 uk-margin-small-top">Qualità del codice</h4>
-                                <p class="uk-margin-medium-top">Risolvo problemi legati a codice vecchio e deprecato, sfruttando le tecnologie migliori.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-panel">
-                                <i class="material-icons-round uk-icon-large">insights</i>
-                                <h4 class="uk-h4 uk-margin-small-top">Analisi</h4>
-                                <p class="uk-margin-medium-top">Fornisco al cliente strumenti di analisi/report per aumentare la produttività.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-panel">
-                                <i class="material-icons-round uk-icon-large">restart_alt</i>
-                                <h4 class="uk-h4 uk-margin-small-top">Aggiornamenti</h4>
-                                <p class="uk-margin-medium-top">Mantengo i sistemi aggiornati tramite delle verifiche periodiche.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-panel">
-                                <i class="material-icons uk-icon-large">dashboard</i>
-                                <h4 class="uk-h4 uk-margin-small-top">Soluzioni moderne</h4>
-                                <p class="uk-margin-medium-top">Propongo le tecnologie e gli stack più aggiornati al fine di garantire qualità e flessibilità del codice</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-panel">
-                                <i class="material-icons-round uk-icon-large">support</i>
-                                <h4 class="uk-h4 uk-margin-small-top">Supporto</h4>
-                                <p class="uk-margin-medium-top">Sono disponibile 24 ore su 24 per qualsiasi tipo di assistenza legata al prodotto</p>.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
 
-            <!-- Clients -->
-            <div id="clients_brands" class="uni-clients uk-section-large uk-section-2xlarge@m uk-background-gray-10 dark:uk-background-gray-100">
-                <div class="uk-container">
-                    <div class="uk-grid-medium uk-flex-around@m uk-text-center uk-child-width-1-2 uk-child-width-1-4@m dark:uk-text-gray-10" data-uk-grid="">
-                        <div>
-                            <a href="https://royalfitness.it">
-                                <img width="100" src="./assets/images/brands/brand-01.png" alt="Brand" data-uk-svg="" />
-                            </a>
-                        </div>
-                        <div>
-                            <img width="100" src="./assets/images/brands/brand-02.png" alt="Brand" data-uk-svg="" />
-                        </div>
-                        <div>
-                            <img width="100" src="./assets/images/brands/brand-03.svg" alt="Brand" data-uk-svg="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="post-content">
+    <div class="col-7">
+    <center>
+  <table>
+<tr><td style="padding:10px 90px 10px 0px">
+      <img width="200px" class="img-rounded" src="./foto.png" />
+  </td><td style="padding:10px">
+    <center>
+    <h1>Valerio Triolo</h1>
+    <b>Master of Science student.</b> <br> <b>University of Messina</b> <br>
+    University of Messina (ME), <a href="https://unime.it">University of Messina</a> <br>
+    <span style="font-size:15px"><a href="mailto:valerio@digixa.it">[valerio@digixa.it]</a></span> </h1> <br>
+</center>
 
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9142553806308933"
-            crossorigin="anonymous"></script>
-               <!-- valeriotriolo -->
-               <ins class="adsbygoogle"
-                   style="display:inline-block;width:728px;height:90px"
-                   data-ad-client="ca-pub-9142553806308933"
-                   data-ad-slot="2315808316"></ins>
-               <script>
-                   (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+      </td>
+  </tr>
+  </table>
+  </center>
+<br>
+</div>
 
-            <!-- Footer / cta -->
-            <footer class="uni-cta-footer uk-section-large uk-section-2xlarge@m uk-padding-large-bottom uk-overflow-hidden uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40 uk-dark">
-                <div class="uk-container">
-                    <div>
-                        <div class="uk-width-2xlarge">
-                            <h2 class="uk-h1 uk-heading-hero@m">Affidati a me.</h2>
-                            <a href="#start-project" class="uk-button uk-button-large uk-button-primary uk-margin-top uk-margin-large-top@m dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80" data-uk-toggle="">
-                                <span>Inizia un progetto</span>
-                                <span class="material-icons-round">arrow_forward</span>
-                            </a>
-                        </div>
-                        <div>
-                            <div class="uk-section-large uk-section-2xlarge@m dark:uk-text-gray-10">
-                                <div class="uk-grid uk-grid-medium" data-uk-grid="">
-                                    <div class="uk-width-expand@m">
-                                        <div class="uk-grid uk-grid-medium uk-child-width-1-2@m" data-uk-grid="">
-                                            <div>
-                                                <ul class="uk-list uk-list-large">
-                                                    <li><a href="https://github.com/valeriot30" class="uk-link">Github</a></li>
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <ul class="uk-list uk-list-large">
-                                                    <li><a href="https://instagram.com/valerio3010" class="uk-link">Instagram</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+<p style="font-size: 18px">
+  Hi, i’m Valerio! I’m a master of science student in Engineering in Computer Science at University of Messina. I hold a bachelor degree in Electronic and Computer Engineering and i graduated with the maximum score (summa cum laude) discussing a thesis about the parallelization of a search algorithm in Hamming space, using a song recognition algorithm as a case study. I’m currently attending the courses of the master degree, such as Artificial Intelligence, Performance Evaluation and Cybersecurity / Cyber-physical systems. I’m also collaborating with the CINI group, in a research project about the assessment of the Quality of Experience in video live streaming. I like working on fresh new projects!
+</p>
 
-                            <hr class="uk-margin-remove dark:uk-border-white-10">
+<p style="font-size: 18px">
+  I work as a collaborator at <a href="https://digixa.it">Digixa.it</a> and i like working on new projects. See my <a href="https://github.com/valeriot30">GitHub</a>
+</p>
 
-                            <div class="uk-margin-large-top">
-                                <div class="uk-grid uk-grid-medium@m" data-uk-grid>
-                                    <div class="uk-width-5-12@m">
-       
-                                    </div>
-                                    <div class="uk-width-expand@m uk-flex-first@m">
-                                        <span>2022 © valeriotriolo.it</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
 
-        </div>
-        <!-- Initiat Scripts -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-    window.addEventListener('load', function(){
-    window.cookieconsent.initialise({
-    revokeBtn: "<div class='cc-revoke'></div>",
-    type: "opt-in",
-    position: "bottom-left",
-    theme: "edgeless",
-    palette: {
-        popup: {
-            background: "#000",
-            text: "#fff"
-            },
-        button: {
-            background: "#fd0",
-            text: "#000"
-            }
-        },
-    content: {
-        message: "Questo sito utilizza cookie tecnici, analitici e di profilazione, necessari rispettivamente a consentire alcune funzionalità.",
-        link: "Cookie Policy",
-        allow: "Accetta tutti",
-        deny: "Rifiuta",
-        href: "https://www.valeriotriolo.it/policy"
-        },
-        onInitialise: function(status) {
-        if(status == cookieconsent.status.allow) myScripts();
-        },
-        onStatusChange: function(status) {
-        if (this.hasConsented()) myScripts();
-        }
-    })
-    });
+  <h3>Papers & Works</h3>
 
-    function myScripts() {
-    // Paste here your scripts that use cookies requiring consent.
-    }
-</script>
-        <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
-        <script defer src="./assets/js/responsive-uk-attr.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-        <script defer src="./assets/js/app.js"></script>
-        <script defer src="./assets/js/swiper-helper.js"></script>
-        <script defer src="./assets/js/typed-helper.js"></script>
-        <script defer src="./assets/js/anime-helper.js"></script>
-        <script defer src="./assets/js/anime-helper-defined-timelines.js"></script>
-    </body>
+<p style="font-size: 18px">
+The papers and works that represent my research interests and style.
+</p>
+
+
+<table>
+
+
+  <tr><td style="padding:10px">
+      
+      <a href=""><img height="75px" style="min-width:100px" src="https://avatar.tobi.sh/valeriot30"></a>
+
+      
+</td><td style="padding:10px">
+<a class="paper" href="https://openreview.net/group?id=QualITA/2025/Conference&referrer=%5BHomepage%5D(%2F)#tab-recent-activity">
+Real-Time QoE Assessment of Video Streaming based on ITU-T P.1203
+</a><br>
+V. Triolo - M. Scarpa - S. Serrano - S. Distefano<br>
+QualITA 2025 <br>
+
+<br>
+
+</td>
+
+
+</tr>
+
+
+  <tr><td style="padding:10px">
+      
+      <a href=""><img height="75px" style="min-width:100px" src="https://avatar.tobi.sh/Parallel Algorithm for Fast search in Hamming space"></a>
+
+      
+</td><td style="padding:10px">
+<a class="paper" href="https://github.com/valeriot30/mih">
+Parallel Algorithm for Efficient Search with Multi-Index Hashing ​
+</a><br>
+University of Messina, Bachelor Degree in Electronic & Computer Engineering <br>
+
+<br>
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+
+<!--
+<h3>Funding</h3>
+      <p style="font-size: 18px">
+        Our group has been generously supported through research grants and
+        gifts from the following industrial institutions:
+        <br>
+        <br>
+      </p>
+          </div>
+      <div class = "row">
+      <center style="span">
+        <img width="85px" style="display: inline" src="logos/oracle.png">
+        <img width="85px" style="display: inline" src="logos/systranlogo.png">
+        <img width="85px" style="display: inline" src="logos/google.jpg">
+        <img width="85px" style="display: inline" src="logos/bloomberg.jpg">
+        <img width="85px" style="display: inline" src="logos/microsoft.jpg">
+        <img width="85px" style="display: inline" src="logos/aws.png">
+        <img width="85px" style="display: inline" src="logos/fb.png">
+        <img width="85px" style="display: inline" src="logos/intel.jpg">
+      </center>
+<br>
+-->
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Valerio Triolo</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>email</li>
+          <li><a href="valerio@digixa.it">valerio@digixa.it</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/valeriot30"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">valeriot30</span></a>
+
+          </li>
+          
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
 </html>
